@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Nail Salon Near Me in Raleigh, Memphis | Cathy's Nails</title>
-  <meta name="description" content="Looking for a nail salon near you in Raleigh, Memphis? Cathy's Nails offers manicures, pedicures, gel & acrylic nails, nail art, and spa services in a clean, welcoming environment. Walk-ins welcome!"/>
+  <title>Cathy’s Nails | Nail Salon in Raleigh, Memphis – Manicures, Pedicures & Gel Nails</title>
+  <meta name="description" content="Cathy's Nails is a local, family-owned nail salon in Raleigh, Memphis offering manicures, pedicures, gel & acrylic nails, nail art, and spa services in a clean, welcoming environment. Walk-ins welcome!"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Google tag (GA4) -->
@@ -15,12 +15,13 @@
     gtag('config', 'G-CX5BWHD6J5');
   </script>
 
-  <!-- Local Business Schema -->
+  <!-- Local Business Schema with Reviews -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "NailSalon",
     "name": "Cathy's Nails",
+    "image": "images/salon_hero.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4970 Raleigh Lagrange Rd",
@@ -31,13 +32,35 @@
     },
     "telephone": "(901) 937-1777",
     "areaServed": "Raleigh Memphis",
-    "url": "https://cathysnailsraleigh.com/"
+    "url": "https://cathysnailsraleigh.com/",
+    "review": [
+      {
+        "@type": "Review",
+        "author": "Johanna B., Raleigh Memphis",
+        "datePublished": "2026-01-29",
+        "reviewBody": "Love the service and attention to detail. I will visit again! Services received: Pedicure, Manicure, Foot massages, Nail painting, Nail cut & filing, Gel manicures, Callus removal",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+      },
+      {
+        "@type": "Review",
+        "author": "Tamara K., Memphis",
+        "datePublished": "2026-01-29",
+        "reviewBody": "Mrs. Ann & Mr. Tony are fantastic! I was skeptical at first because I didn’t know how my nails would turn out, but I’m so glad I tried. I love my nails and the custom nail art. Services received: Acrylic nails, Manicure, Nail art, Nail cut & filing, Nail designs, Nail extensions, Nail painting, Sculpted nails",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+      }
+    ]
   }
   </script>
 
   <style>
     body { font-family: Arial, sans-serif; margin:0; line-height:1.6; color:#333; background:#fff; }
     header { background:#f8cfd8; padding:40px 20px; text-align:center; }
+    header p {
+      max-width: 900px; /* adjust width as needed */
+      margin: 20px auto 0; /* centers the paragraph and adds top spacing */
+      line-height: 1.8; /* optional: improves readability */
+      font-size: 1rem; /* optional: ensures consistent font size */
+    }
     header img { max-width:100%; height:auto; border-radius:8px; margin-bottom:20px; }
     section { max-width:900px; margin:auto; padding:40px 20px; }
     h1,h2,h3 { color:#b03060; }
@@ -45,15 +68,13 @@
     iframe { width:100%; height:350px; border:0; margin-top:20px; }
     footer { background:#f2f2f2; padding:20px; text-align:center; font-size:14px; }
     input, textarea { width:100%; padding:10px; margin-bottom:10px; }
-    .gallery { display:flex; flex-wrap:wrap; gap:10px; }
+    .gallery { display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
     .gallery img { width:48%; border-radius:8px; }
     ul.services { list-style-type: disc; padding-left:20px; }
-    form { margin-top:20px; }
-    button { background:#b03060; color:white; padding:12px 20px; border:none; border-radius:5px; cursor:pointer; }
-    button:hover { opacity:0.9; }
     .staff { display:flex; flex-wrap:wrap; gap:20px; margin-top:20px; }
     .staff-member { width:48%; }
     .staff-member img { width:100%; border-radius:8px; }
+    blockquote { border-left:4px solid #b03060; padding-left:10px; margin:20px 0; background:#f9f0f2; }
   </style>
 </head>
 
@@ -61,8 +82,10 @@
 
 <header>
   <img src="images/hero.png" alt="Interior of Cathy's Nails salon in Raleigh, Memphis" loading="lazy">
-  <h1>Nail Salon Near Me in Raleigh, Memphis</h1>
-  <p>Welcome to Cathy's Nails! We offer manicures, pedicures, gel & acrylic nails, nail art, and spa services in a clean, welcoming environment.</p>
+  <h1>Cathy’s Nails | Nail Salon in Raleigh, Memphis – Manicures, Pedicures & Gel Nails</h1>
+  <p>
+    At Cathy's Nails, we are a proud local, family-owned nail salon serving the Raleigh, Memphis community. We believe nail care is more than just a beauty service—it’s an experience that brings confidence, relaxation, and a personal touch. Our salon offers a welcoming, clean, and friendly environment where clients can enjoy professional manicures, pedicures, gel & acrylic nails, and creative nail art tailored to their style. As a small business, we take pride in supporting our neighborhood, building relationships with our clients, and providing personalized care that larger chains just can’t match. Come experience the difference at Cathy's Nails, where every visit feels like home.
+  </p>
 </header>
 
 <section>
@@ -78,6 +101,7 @@
     <li>Walk-ins Welcome</li>
   </ul>
 </section>
+
 <section>
   <h2>Meet Our Nail Technicians</h2>
   <p>Our talented and licensed nail technicians provide high-quality nail services in a safe, clean, and friendly environment.</p>
@@ -107,7 +131,7 @@
   <h3>Pedicures</h3>
   <div class="gallery">
     <img src="images/pedicure1.jpeg" alt="Spa pedicure service at Cathy's Nails, Raleigh Memphis" loading="lazy">
-    <img src="images/pedicure2.jpg" alt="Express pedicure with nail polish at Cathy's Nails" loading="lazy">
+    <img src="images/pedicure2.jpg" alt="Express pedicure with nail polish at Cathy's Nails, Raleigh Memphis" loading="lazy">
   </div>
 
   <h3>Salon Interior</h3>
@@ -115,7 +139,6 @@
     <img src="images/salon_interior.jpg" alt="Interior of Cathy's Nails salon with manicure stations, Raleigh Memphis" loading="lazy">
   </div>
 </section>
-
 
 <section>
   <h2>Why Choose Our Nail Salon?</h2>
@@ -135,7 +158,6 @@
     <br>
     <strong>Services received:</strong> Acrylic nails, Manicure, Nail art, Nail cut & filing, Nail designs, Nail extensions, Nail painting, Sculpted nails
   </blockquote>
-  
 </section>
 
 <section>
