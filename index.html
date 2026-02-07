@@ -17,40 +17,61 @@
 
   <!-- Local Business Schema with Reviews -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "NailSalon",
-    "name": "Cathy's Nails",
-    "image": "images/salon_interior.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "4970 Raleigh Lagrange Rd",
-      "addressLocality": "Raleigh",
-      "addressRegion": "TN",
-      "postalCode": "38128",
-      "addressCountry": "US"
-    },
-    "telephone": "(901) 937-1777",
-    "areaServed": "Raleigh Memphis",
-    "url": "https://cathysnailsraleigh.com/",
-    "review": [
-      {
-        "@type": "Review",
-        "author": "Johanna B., Raleigh Memphis",
-        "datePublished": "2026-01-29",
-        "reviewBody": "Love the service and attention to detail. I will visit again! Services received: Pedicure, Manicure, Foot massages, Nail painting, Nail cut & filing, Gel manicures, Callus removal",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+    {
+      "@context": "https://schema.org",
+      "@type": "NailSalon",
+      "name": "Cathy's Nails",
+      "image": "https://cathysnailsraleigh.com/images/salon_interior.png",
+      "url": "https://cathysnailsraleigh.com/",
+      "telephone": "(901) 937-1777",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4970 Raleigh Lagrange Rd",
+        "addressLocality": "Memphis",
+        "addressRegion": "TN",
+        "postalCode": "38128",
+        "addressCountry": "US"
       },
-      {
-        "@type": "Review",
-        "author": "Tamara K., Memphis",
-        "datePublished": "2026-01-29",
-        "reviewBody": "Mrs. Ann & Mr. Tony are fantastic! I was skeptical at first because I didn’t know how my nails would turn out, but I’m so glad I tried. I love my nails and the custom nail art. Services received: Acrylic nails, Manicure, Nail art, Nail cut & filing, Nail designs, Nail extensions, Nail painting, Sculpted nails",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
-      }
-    ]
-  }
-  </script>
+      "areaServed": "Raleigh Memphis TN",
+    
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.1",
+        "reviewCount": "2"
+      },
+    
+      "review": [
+        {
+          "@type": "Review",
+          "name": {
+            "@type": "Person",
+            "name": "Johanna B."
+          },
+          "datePublished": "2026-01-29",
+          "reviewBody": "Love the service and attention to detail. I will visit again!",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "name": {
+            "@type": "Person",
+            "name": "Tamara K."
+          },
+          "datePublished": "2026-01-29",
+          "reviewBody": "Mrs. Ann & Mr. Tony are fantastic! I love my nails and the custom nail art.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        }
+      ]
+    }
+    </script>    
 
   <style>
     body { font-family: Arial, sans-serif; margin:0; line-height:1.6; color:#333; background:#fff; }
